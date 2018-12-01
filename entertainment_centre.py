@@ -1,4 +1,5 @@
 from movie import Movie
+import fresh_tomatoes
 
 toy_story = Movie("Toy Story",
                   "A story of a boy and his toys that come to life.",
@@ -15,3 +16,7 @@ withnail_and_i = Movie("Withnail & I",
                        "https://upload.wikimedia.org/wikipedia/en/f/fe/Withnail_and_i_poster.jpg",
                        "https://www.youtube.com/watch?v=d9Z0DV33gAY")
 print(f"{withnail_and_i.title}: {withnail_and_i.storyline}")
+
+
+movies = [toy_story, avatar, withnail_and_i]
+fresh_tomatoes.open_movies_page(movies)
